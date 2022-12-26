@@ -1,0 +1,613 @@
+{
+    "seconds": 0.7624869999999999,
+    "status": 200,
+    "reason": "OK",
+    "body": {
+        "_links": {
+            "self": {
+                "href": "https://stage.tce.tillster.com/tce-experience-admin/tenants/8bd96089-355c-42ae-9bbc-affc55173124"
+            }
+        },
+        "supportedServiceTypes": [
+            "DineIn",
+            "BringToTable",
+            "Pickup",
+            "DriveThru",
+            "Curbside",
+            "DeliveryByChannel",
+            "DeliveryByRestaurant",
+            "Other"
+        ],
+        "currency": "USD",
+        "aggregatorConfigurations": {
+            "postmates": {
+                "settings": {
+                    "alcohol": false,
+                    "pauseOrdering": false,
+                    "calorieCounts": false,
+                    "scheduledOrders": false
+                },
+                "enabled": false
+            },
+            "hugo": {
+                "settings": {
+                    "alcohol": false,
+                    "pauseOrdering": false,
+                    "calorieCounts": false,
+                    "scheduledOrders": false
+                },
+                "enabled": true
+            },
+            "ubereats-spi": {
+                "settings": {
+                    "alcohol": false,
+                    "pauseOrdering": false,
+                    "calorieCounts": false,
+                    "scheduledOrders": false
+                },
+                "enabled": true
+            },
+            "doordash": {
+                "settings": {
+                    "alcohol": false,
+                    "pauseOrdering": true,
+                    "calorieCounts": false,
+                    "scheduledOrders": true
+                },
+                "enabled": true
+            },
+            "justeat": {
+                "settings": {
+                    "alcohol": false,
+                    "pauseOrdering": false,
+                    "calorieCounts": false,
+                    "scheduledOrders": false
+                },
+                "enabled": true
+            },
+            "foodpanda": {
+                "settings": {
+                    "alcohol": false,
+                    "pauseOrdering": false,
+                    "calorieCounts": false,
+                    "scheduledOrders": false
+                },
+                "enabled": true
+            },
+            "consumer-api": {
+                "settings": {
+                    "alcohol": false,
+                    "pauseOrdering": true,
+                    "calorieCounts": true,
+                    "scheduledOrders": false
+                },
+                "enabled": true
+            },
+            "glovo": {
+                "settings": {
+                    "alcohol": false,
+                    "pauseOrdering": false,
+                    "calorieCounts": false,
+                    "scheduledOrders": false
+                },
+                "enabled": true
+            },
+            "pedidosya": {
+                "settings": {
+                    "alcohol": false,
+                    "pauseOrdering": false,
+                    "calorieCounts": false,
+                    "scheduledOrders": false
+                },
+                "enabled": false
+            },
+            "ubereats": {
+                "settings": {
+                    "alcohol": false,
+                    "pauseOrdering": true,
+                    "calorieCounts": false,
+                    "scheduledOrders": false
+                },
+                "enabled": true
+            }
+        },
+        "aggregatorIds": [
+            "consumer-api",
+            "doordash",
+            "foodpanda",
+            "glovo",
+            "hugo",
+            "justeat",
+            "ubereats",
+            "ubereats-spi"
+        ],
+        "storeCount": 125,
+        "countryCode": "US",
+        "configurations": {
+            "settings": {
+                "alcohol": true,
+                "pauseOrdering": true,
+                "calorieCounts": true,
+                "scheduledOrders": true
+            }
+        },
+        "name": "Bespoke Eats",
+        "supportedLanguages": [
+            "en-GB",
+            "en-US"
+        ],
+        "language": "en-US",
+        "unitOfDistanceMeasure": "km",
+        "headquartersAddress": {},
+        "alias": "SBT",
+        "schedule": [
+            {
+                "name": "Business Hours",
+                "specialHours": [],
+                "hours": {
+                    "THU": [
+                        {
+                            "startTime": "07:00:00.000",
+                            "endTime": "19:00:00.000"
+                        }
+                    ],
+                    "TUE": [
+                        {
+                            "startTime": "10:00:00.000",
+                            "endTime": "17:00:00.000"
+                        }
+                    ],
+                    "WED": [
+                        {
+                            "startTime": "07:00:00.000",
+                            "endTime": "19:00:00.000"
+                        }
+                    ],
+                    "SAT": [
+                        {
+                            "startTime": "10:00:00.000",
+                            "endTime": "18:00:00.000"
+                        }
+                    ],
+                    "FRI": [
+                        {
+                            "startTime": "07:00:00.000",
+                            "endTime": "19:00:00.000"
+                        }
+                    ],
+                    "MON": [
+                        {
+                            "startTime": "07:00:00.000",
+                            "endTime": "19:00:00.000"
+                        }
+                    ],
+                    "SUN": [
+                        {
+                            "startTime": "10:00:00.000",
+                            "endTime": "18:00:00.000"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "24 Hours",
+                "hours": {
+                    "FRI": [
+                        {
+                            "startTime": "00:01:00.000",
+                            "endTime": "23:59:00.000"
+                        }
+                    ],
+                    "TUE": [
+                        {
+                            "startTime": "00:01:00.000",
+                            "endTime": "23:59:00.000"
+                        }
+                    ],
+                    "MON": [
+                        {
+                            "startTime": "00:01:00.000",
+                            "endTime": "23:59:00.000"
+                        }
+                    ],
+                    "SUN": [
+                        {
+                            "startTime": "00:01:00.000",
+                            "endTime": "23:59:00.000"
+                        }
+                    ],
+                    "WED": [
+                        {
+                            "startTime": "00:01:00.000",
+                            "endTime": "23:59:00.000"
+                        }
+                    ],
+                    "SAT": [
+                        {
+                            "startTime": "00:01:00.000",
+                            "endTime": "23:59:00.000"
+                        }
+                    ]
+                },
+                "specialHours": [],
+                "scheduledHours": {
+                    "THU": [
+                        {
+                            "startTime": "12:00:00.000",
+                            "endTime": "15:00:00.000"
+                        }
+                    ],
+                    "TUE": [
+                        {
+                            "startTime": "12:00:00.000",
+                            "endTime": "15:00:00.000"
+                        }
+                    ],
+                    "WED": [
+                        {
+                            "startTime": "12:00:00.000",
+                            "endTime": "15:00:00.000"
+                        }
+                    ],
+                    "SAT": [
+                        {
+                            "startTime": "12:00:00.000",
+                            "endTime": "15:00:00.000"
+                        }
+                    ],
+                    "FRI": [
+                        {
+                            "startTime": "12:00:00.000",
+                            "endTime": "15:00:00.000"
+                        }
+                    ],
+                    "SUN": [
+                        {
+                            "startTime": "12:00:00.000",
+                            "endTime": "15:00:00.000"
+                        }
+                    ],
+                    "MON": [
+                        {
+                            "startTime": "12:00:00.000",
+                            "endTime": "15:00:00.000"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Special Hours",
+                "specialHours": [
+                    {
+                        "rule": {
+                            "type": "fixedDate",
+                            "value": "2020-11-26"
+                        },
+                        "operatingHours": []
+                    },
+                    {
+                        "rule": {
+                            "type": "fixedDate",
+                            "value": "2021-01-05"
+                        },
+                        "operatingHours": [
+                            {
+                                "startTime": "08:00:00.000",
+                                "endTime": "11:00:00.000"
+                            }
+                        ]
+                    },
+                    {
+                        "rule": {
+                            "type": "fixedDate",
+                            "value": "2021-01-05"
+                        },
+                        "operatingHours": [
+                            {
+                                "startTime": "10:00:00.000",
+                                "endTime": "13:00:00.000"
+                            }
+                        ]
+                    }
+                ],
+                "hours": {
+                    "THU": [
+                        {
+                            "startTime": "10:30:00.000",
+                            "endTime": "22:00:00.000"
+                        }
+                    ],
+                    "TUE": [
+                        {
+                            "startTime": "10:30:00.000",
+                            "endTime": "22:00:00.000"
+                        }
+                    ],
+                    "MON": [
+                        {
+                            "startTime": "09:30:00.000",
+                            "endTime": "23:00:00.000"
+                        }
+                    ],
+                    "SUN": [
+                        {
+                            "startTime": "09:30:00.000",
+                            "endTime": "23:00:00.000"
+                        }
+                    ],
+                    "WED": [
+                        {
+                            "startTime": "10:30:00.000",
+                            "endTime": "22:00:00.000"
+                        }
+                    ],
+                    "SAT": [
+                        {
+                            "startTime": "09:30:00.000",
+                            "endTime": "23:00:00.000"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Friday Special",
+                "specialHours": [],
+                "hours": {
+                    "THU": [
+                        {
+                            "startTime": "08:00:00.000",
+                            "endTime": "20:00:00.000"
+                        }
+                    ],
+                    "FRI": [
+                        {
+                            "startTime": "08:00:00.000",
+                            "endTime": "20:00:00.000"
+                        }
+                    ],
+                    "TUE": [
+                        {
+                            "startTime": "08:00:00.000",
+                            "endTime": "20:00:00.000"
+                        }
+                    ],
+                    "MON": [
+                        {
+                            "startTime": "08:00:00.000",
+                            "endTime": "20:00:00.000"
+                        }
+                    ],
+                    "WED": [
+                        {
+                            "startTime": "08:00:00.000",
+                            "endTime": "20:00:00.000"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Soup of the day (M-F)",
+                "hours": {
+                    "THU": [
+                        {
+                            "startTime": "08:00:00.000",
+                            "endTime": "23:00:00.000"
+                        }
+                    ],
+                    "FRI": [
+                        {
+                            "startTime": "08:00:00.000",
+                            "endTime": "23:00:00.000"
+                        }
+                    ],
+                    "MON": [
+                        {
+                            "startTime": "08:00:00.000",
+                            "endTime": "23:00:00.000"
+                        }
+                    ],
+                    "TUE": [
+                        {
+                            "startTime": "08:00:00.000",
+                            "endTime": "23:00:00.000"
+                        }
+                    ],
+                    "WED": [
+                        {
+                            "startTime": "08:00:00.000",
+                            "endTime": "23:00:00.000"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Soup (T/TH)",
+                "hours": {
+                    "THU": [
+                        {
+                            "startTime": "10:00:00.000",
+                            "endTime": "14:00:00.000"
+                        }
+                    ],
+                    "TUE": [
+                        {
+                            "startTime": "10:00:00.000",
+                            "endTime": "14:00:00.000"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Test 123",
+                "hours": {
+                    "SUN": [
+                        {
+                            "startTime": "11:00:00.000",
+                            "endTime": "12:00:00.000"
+                        }
+                    ]
+                },
+                "specialHours": [],
+                "scheduledHours": {
+                    "MON": [
+                        {
+                            "startTime": "12:00:00.000",
+                            "endTime": "13:14:00.000"
+                        }
+                    ],
+                    "TUE": [
+                        {
+                            "startTime": "12:00:00.000",
+                            "endTime": "13:14:00.000"
+                        }
+                    ]
+                }
+            }
+        ],
+        "mainContactInfo": {},
+        "tillsterContactInfo": {},
+        "id": "8bd96089-355c-42ae-9bbc-affc55173124",
+        "aggregatorTemplates": [
+            {
+                "defaults": {
+                    "doordash": {
+                        "surcharge": 23,
+                        "settings": {
+                            "pauseOrdering": true
+                        },
+                        "tenderType": "CreditCard",
+                        "aorEnabled": false,
+                        "tenderId": "15",
+                        "dualPricingEnabled": false
+                    },
+                    "ubereats": {
+                        "surcharge": 23,
+                        "settings": {},
+                        "tenderType": "CreditCard",
+                        "aorEnabled": false,
+                        "tenderId": "36"
+                    }
+                },
+                "name": "Aggregator 1 - Franchise A"
+            },
+            {
+                "name": "DoorDash & UberEats",
+                "defaults": {
+                    "ubereats-spi": {
+                        "surcharge": 10,
+                        "serviceType": "DeliveryByChannel",
+                        "tenderType": "CreditCard",
+                        "tenderId": "990"
+                    },
+                    "doordash": {
+                        "surcharge": 10,
+                        "serviceType": "DeliveryByChannel",
+                        "tenderType": "CreditCard",
+                        "tenderId": "189"
+                    },
+                    "ubereats": {
+                        "surcharge": 10,
+                        "serviceType": "DeliveryByChannel",
+                        "tenderType": "CreditCard",
+                        "tenderId": "990"
+                    }
+                }
+            },
+            {
+                "defaults": {
+                    "ubereats-spi": {
+                        "tenderId": "127",
+                        "serviceType": "DeliveryByChannel",
+                        "tenderType": "CreditCard"
+                    },
+                    "doordash": {
+                        "tenderId": "124",
+                        "serviceType": "DeliveryByChannel",
+                        "tenderType": "CreditCard"
+                    },
+                    "ubereats": {
+                        "serviceType": "DeliveryByChannel",
+                        "tenderType": "CreditCard",
+                        "accountId": "12345",
+                        "tenderId": "127"
+                    }
+                },
+                "name": "Aggregator IDs"
+            },
+            {
+                "defaults": {
+                    "doordash": {
+                        "surcharge": 0,
+                        "settings": {
+                            "pauseOrdering": false
+                        },
+                        "tenderType": "CreditCard",
+                        "aorEnabled": false,
+                        "tenderId": "126",
+                        "dualPricingEnabled": false
+                    },
+                    "ubereats": {
+                        "surcharge": 0,
+                        "settings": {
+                            "pauseOrdering": false
+                        },
+                        "tenderType": "CreditCard",
+                        "aorEnabled": false,
+                        "tenderId": "126"
+                    }
+                },
+                "name": "Demo Franchisee"
+            },
+            {
+                "defaults": {
+                    "consumer-api": {
+                        "surcharge": 0,
+                        "tenderType": "Cash",
+                        "aorEnabled": false,
+                        "tenderId": "123"
+                    }
+                },
+                "name": "teste"
+            },
+            {
+                "defaults": {
+                    "foodpanda": {
+                        "surcharge": 1,
+                        "tenderType": "Cash",
+                        "aorEnabled": false,
+                        "tenderId": "123412"
+                    }
+                },
+                "name": "Test Template 12345"
+            },
+            {
+                "name": "Aggregator 1 - Franchise A",
+                "defaults": {}
+            },
+            {
+                "name": "rew",
+                "defaults": {}
+            }
+        ]
+    },
+    "headers": {
+        "Date": "Sat, 17 Dec 2022 13:59:31 GMT",
+        "Content-Type": "application/hal+json",
+        "Content-Length": "6961",
+        "Connection": "keep-alive",
+        "x-amzn-RequestId": "20857c34-d1ec-4a6e-b0c6-8217a3a0bae5",
+        "Access-Control-Allow-Origin": "*",
+        "x-amz-apigw-id": "dSyydH1MIAMFdIQ=",
+        "X-Amzn-Trace-Id": "Root=1-639dcb42-46c570905efa8ce864b5b897;Sampled=0",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 d7103aea70f9f06cfabe434b8ee7770e.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "MAA51-C2",
+        "X-Amz-Cf-Id": "rxXPHfsGtN-q6AJeX4t6xl7r_AJl4Mxd63pPBie7IhBJMNRSrwAILw==",
+        "CF-Cache-Status": "DYNAMIC",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "Server": "cloudflare",
+        "CF-RAY": "77b02e006c5fa917-MAA",
+        "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+    }
+}

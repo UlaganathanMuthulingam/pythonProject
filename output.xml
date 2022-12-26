@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.9.1 on win32)" generated="20221217 20:10:27.027" rpa="false" schemaversion="3">
+<suite id="s1" name="API" source="C:\Users\Ulaganathan.M\PycharmProjects\pythonProject\Testcases\API.robot">
+<test id="s1-t1" name="GetMethod" line="7">
+<kw name="Set Headers" library="REST">
+<arg>{ "authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1EVXhSalF3UXpJMlJqQkJRa0ZGTkRFMVJrRkZSa1V5UVRkQ05VTTNOVUU1UkRBMFJFSXlSUSJ9.eyJodHRwczovL3RjZS50aWxsc3Rlci5jb20vIjp7InRpZHMiOlsiKiJdLCJzaWRzIjp7IioiOlsiKiJdfSwicm9sZXMiOlsiU3VwZXJBZG1pbiJdLCJ0ZW5hbnRDbGFpbXMiOnsiKiI6eyJyb2xlcyI6WyJTdXBlckFkbWluIl0sInBlcm1pc3Npb25zIjpbIioiXX19LCJ1c2VySWQiOiJkNThkYzBmNy0xZDNlLTRjYzctOWE4NC1lZWE3ZGMzNjVmZTQifSwiaXNzIjoiaHR0cHM6Ly90aWxsc3Rlci10Y2Utc3RhZ2UuYXV0aDAuY29tLyIsInN1YiI6IndhYWR8T0dFVFBMNTRNLTlHeGUwaWhncjJDcTVXaVRLTTJSNmtYdnY1eXE0c2NRayIsImF1ZCI6WyJodHRwczovL3N0YWdlLnRjZS50aWxsc3Rlci5jb20vdGNlLWV4cGVyaWVuY2UtYWRtaW4iLCJodHRwczovL3RpbGxzdGVyLXRjZS1zdGFnZS5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNjcxMjgyODc1LCJleHAiOjE2NzEzNjkyNzUsImF6cCI6Ijg2dTRuaVptc0hLWGFZTUFuS3NWMnVaSjAwYklQMTAyIiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInBlcm1pc3Npb25zIjpbXX0.zrrMMjaatPVMREZszl9KT9I6YJwcbg_ZaMyuQac7QPhQEV6oT2RblubZuM3kSRNBq3lj_7TgspIwsMcVZzdzvsgiiikUbdgyt77QbIbpnTaTwWt7XYQ2o4IPm6tn6cNQOXkxZuST88dl_3Kavx_FZAzLankHPhJciEeSMzYLhw6r4oOjlmDzgyJJGAgVhTC_H7hzB0VG6hAn8iHgttLQk4BIhJ4MKYGcHU-zWVZvTAkhwgj97AwYP7YnqlxZLJiiWxxeWsvS244_-8XWWPoBlmgC4ZdvT-Hhsme_0G4HisiTcT6-kMDjRVHq6y7UmErTRIkH3J6pvoR7rWID61sTGg","active-tenant-identifier": "8bd96089-355c-42ae-9bbc-affc55173124"}</arg>
+<tag>settings</tag>
+<doc>*Sets new request headers or updates the existing.*</doc>
+<status status="PASS" starttime="20221217 20:10:30.031" endtime="20221217 20:10:30.032"/>
+</kw>
+<kw name="GET" library="REST">
+<arg>/tenants/8bd96089-355c-42ae-9bbc-affc55173124/</arg>
+<tag>http</tag>
+<doc>*Sends a GET request to the endpoint.*</doc>
+<status status="PASS" starttime="20221217 20:10:30.034" endtime="20221217 20:10:38.146"/>
+</kw>
+<kw name="Output" library="REST">
+<arg>response status</arg>
+<tag>I/O</tag>
+<doc>*Outputs JSON to terminal or a file.*</doc>
+<msg timestamp="20221217 20:10:38.159" level="INFO">
+200</msg>
+<status status="PASS" starttime="20221217 20:10:38.158" endtime="20221217 20:10:38.298"/>
+</kw>
+<kw name="Output" library="REST">
+<var>${val}</var>
+<arg>$.currency</arg>
+<tag>I/O</tag>
+<doc>*Outputs JSON to terminal or a file.*</doc>
+<msg timestamp="20221217 20:10:38.389" level="INFO">
+"USD"</msg>
+<msg timestamp="20221217 20:10:38.391" level="INFO">${val} = USD</msg>
+<status status="PASS" starttime="20221217 20:10:38.299" endtime="20221217 20:10:38.391"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${val}</arg>
+<arg>USD</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20221217 20:10:38.391" endtime="20221217 20:10:38.392"/>
+</kw>
+<status status="PASS" starttime="20221217 20:10:30.029" endtime="20221217 20:10:38.392"/>
+</test>
+<status status="PASS" starttime="20221217 20:10:27.042" endtime="20221217 20:10:38.394"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="API">API</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
