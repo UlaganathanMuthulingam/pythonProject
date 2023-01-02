@@ -1,6 +1,11 @@
 *** Settings ***
 Library     REST  https://stage.tce.tillster.com/tce-experience-admin
+Library           SeleniumLibrary
+Library     ../WebdriverManager/BrowserDriverManager.py
 
+*** Variables ***
+${LOGIN URL}      http://localhost:7272
+${BROWSER}        Chrome
 
 
 *** Test Cases ***
@@ -12,4 +17,9 @@ GetMethod
     Should Be Equal As Strings    ${val}    USD
 
 
+Valid Login
+    ${hmm}=  BrowserDriverManager.Get Browser Driver Path
+    Log To Console    ${hmm}
+    Open Browser    browser=Chrome    url=https://www.idp.com/india/user-signup/    executable_path=BrowserDriverManager.Get Browser Driver Path
+    Maximize Browser Window
 
