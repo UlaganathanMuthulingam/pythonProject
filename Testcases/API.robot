@@ -3,6 +3,7 @@ Library     REST  https://stage.tce.tillster.com/tce-experience-admin
 Library           SeleniumLibrary
 Library     ../WebdriverManager/BrowserDriverManager.py
 
+
 *** Variables ***
 ${LOGIN URL}      http://localhost:7272
 ${BROWSER}        Chrome
@@ -20,6 +21,17 @@ GetMethod
 Valid Login
     ${hmm}=  BrowserDriverManager.Get Browser Driver Path
     Log To Console    ${hmm}
-    Open Browser    browser=Chrome    url=https://www.idp.com/india/user-signup/    executable_path=BrowserDriverManager.Get Browser Driver Path
+    Open Browser    browser=Chrome    url=https://stg.studyreach.com/    executable_path=BrowserDriverManager.Get Browser Driver Path
     Maximize Browser Window
+    Sleep    30s
+    Click Element    xpath=//*[text()='Login']
+    Capture Page Screenshot
+    Input Text    xpath=//*[@name='username']    strpatadm07122022@yopmail.com
+    Input Text    xpath=//*[@name='password']    Test@123
+    Cover Element   xpath=//*[text()='Login']
+    Click Element    xpath=//*[text()='Login']
+    Wait Until Element Is Visible  xpath=//*[@class='nav_rgt']  30s
+    Capture Page Screenshot
+
+
 

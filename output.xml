@@ -1,82 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.9.1 on win32)" generated="20230102 18:40:19.289" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.9.1 on win32)" generated="20230104 15:08:11.548" rpa="false" schemaversion="3">
 <suite id="s1" name="API" source="C:\Users\Ulaganathan.M\PycharmProjects\pythonProject\Testcases\API.robot">
-<test id="s1-t1" name="GetMethod" line="12">
+<test id="s1-t1" name="GetMethod" line="13">
 <kw name="Set Headers" library="REST">
 <arg>{ "authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1EVXhSalF3UXpJMlJqQkJRa0ZGTkRFMVJrRkZSa1V5UVRkQ05VTTNOVUU1UkRBMFJFSXlSUSJ9.eyJodHRwczovL3RjZS50aWxsc3Rlci5jb20vIjp7InRpZHMiOlsiKiJdLCJzaWRzIjp7IioiOlsiKiJdfSwicm9sZXMiOlsiU3VwZXJBZG1pbiJdLCJ0ZW5hbnRDbGFpbXMiOnsiKiI6eyJyb2xlcyI6WyJTdXBlckFkbWluIl0sInBlcm1pc3Npb25zIjpbIioiXX19LCJ1c2VySWQiOiJkNThkYzBmNy0xZDNlLTRjYzctOWE4NC1lZWE3ZGMzNjVmZTQifSwiaXNzIjoiaHR0cHM6Ly90aWxsc3Rlci10Y2Utc3RhZ2UuYXV0aDAuY29tLyIsInN1YiI6IndhYWR8T0dFVFBMNTRNLTlHeGUwaWhncjJDcTVXaVRLTTJSNmtYdnY1eXE0c2NRayIsImF1ZCI6WyJodHRwczovL3N0YWdlLnRjZS50aWxsc3Rlci5jb20vdGNlLWV4cGVyaWVuY2UtYWRtaW4iLCJodHRwczovL3RpbGxzdGVyLXRjZS1zdGFnZS5hdXRoMC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNjcxMjgyODc1LCJleHAiOjE2NzEzNjkyNzUsImF6cCI6Ijg2dTRuaVptc0hLWGFZTUFuS3NWMnVaSjAwYklQMTAyIiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCIsInBlcm1pc3Npb25zIjpbXX0.zrrMMjaatPVMREZszl9KT9I6YJwcbg_ZaMyuQac7QPhQEV6oT2RblubZuM3kSRNBq3lj_7TgspIwsMcVZzdzvsgiiikUbdgyt77QbIbpnTaTwWt7XYQ2o4IPm6tn6cNQOXkxZuST88dl_3Kavx_FZAzLankHPhJciEeSMzYLhw6r4oOjlmDzgyJJGAgVhTC_H7hzB0VG6hAn8iHgttLQk4BIhJ4MKYGcHU-zWVZvTAkhwgj97AwYP7YnqlxZLJiiWxxeWsvS244_-8XWWPoBlmgC4ZdvT-Hhsme_0G4HisiTcT6-kMDjRVHq6y7UmErTRIkH3J6pvoR7rWID61sTGg","active-tenant-identifier": "8bd96089-355c-42ae-9bbc-affc55173124"}</arg>
 <tag>settings</tag>
 <doc>*Sets new request headers or updates the existing.*</doc>
-<status status="PASS" starttime="20230102 18:40:24.322" endtime="20230102 18:40:24.322"/>
+<status status="PASS" starttime="20230104 15:08:12.967" endtime="20230104 15:08:12.967"/>
 </kw>
 <kw name="GET" library="REST">
 <arg>/tenants/8bd96089-355c-42ae-9bbc-affc55173124/</arg>
 <tag>http</tag>
 <doc>*Sends a GET request to the endpoint.*</doc>
-<status status="PASS" starttime="20230102 18:40:24.337" endtime="20230102 18:40:27.433"/>
+<status status="PASS" starttime="20230104 15:08:12.967" endtime="20230104 15:08:14.959"/>
 </kw>
 <kw name="Output" library="REST">
 <arg>response status</arg>
 <tag>I/O</tag>
 <doc>*Outputs JSON to terminal or a file.*</doc>
-<msg timestamp="20230102 18:40:27.433" level="INFO">
+<msg timestamp="20230104 15:08:14.959" level="INFO">
 401</msg>
-<status status="PASS" starttime="20230102 18:40:27.433" endtime="20230102 18:40:27.602"/>
+<status status="PASS" starttime="20230104 15:08:14.959" endtime="20230104 15:08:14.991"/>
 </kw>
 <kw name="Output" library="REST">
 <var>${val}</var>
 <arg>$.currency</arg>
 <tag>I/O</tag>
 <doc>*Outputs JSON to terminal or a file.*</doc>
-<msg timestamp="20230102 18:40:27.750" level="FAIL">JSONPath query '$.currency' did not match anything.</msg>
-<status status="FAIL" starttime="20230102 18:40:27.618" endtime="20230102 18:40:27.750"/>
+<msg timestamp="20230104 15:08:15.013" level="FAIL">JSONPath query '$.currency' did not match anything.</msg>
+<status status="FAIL" starttime="20230104 15:08:14.991" endtime="20230104 15:08:15.013"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${val}</arg>
 <arg>USD</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="NOT RUN" starttime="20230102 18:40:27.750" endtime="20230102 18:40:27.750"/>
+<status status="NOT RUN" starttime="20230104 15:08:15.028" endtime="20230104 15:08:15.028"/>
 </kw>
-<status status="FAIL" starttime="20230102 18:40:24.322" endtime="20230102 18:40:27.750">JSONPath query '$.currency' did not match anything.</status>
+<status status="FAIL" starttime="20230104 15:08:12.967" endtime="20230104 15:08:15.028">JSONPath query '$.currency' did not match anything.</status>
 </test>
-<test id="s1-t2" name="Valid Login" line="20">
+<test id="s1-t2" name="Valid Login" line="21">
 <kw name="Get Browser Driver Path" library="BrowserDriverManager">
 <var>${hmm}</var>
-<msg timestamp="20230102 18:40:27.765" level="INFO">====== WebDriver manager ======</msg>
-<msg timestamp="20230102 18:40:31.012" level="INFO">Get LATEST chromedriver version for google-chrome 108.0.5359</msg>
-<msg timestamp="20230102 18:40:32.464" level="INFO">Driver [C:\Users\Ulaganathan.M\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache</msg>
-<msg timestamp="20230102 18:40:32.502" level="INFO">C:\Users\Ulaganathan.M\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe</msg>
-<msg timestamp="20230102 18:40:32.502" level="INFO">${hmm} = C:\Users\Ulaganathan.M\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe</msg>
-<status status="PASS" starttime="20230102 18:40:27.765" endtime="20230102 18:40:32.502"/>
+<msg timestamp="20230104 15:08:15.028" level="INFO">====== WebDriver manager ======</msg>
+<msg timestamp="20230104 15:08:16.732" level="INFO">Get LATEST chromedriver version for google-chrome 108.0.5359</msg>
+<msg timestamp="20230104 15:08:17.951" level="INFO">Driver [C:\Users\Ulaganathan.M\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe] found in cache</msg>
+<msg timestamp="20230104 15:08:17.951" level="INFO">C:\Users\Ulaganathan.M\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe</msg>
+<msg timestamp="20230104 15:08:17.951" level="INFO">${hmm} = C:\Users\Ulaganathan.M\.wdm\drivers\chromedriver\win32\108.0.5359\chromedriver.exe</msg>
+<status status="PASS" starttime="20230104 15:08:15.028" endtime="20230104 15:08:17.951"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${hmm}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20230102 18:40:32.502" endtime="20230102 18:40:32.502"/>
+<status status="PASS" starttime="20230104 15:08:17.951" endtime="20230104 15:08:17.951"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=Chrome</arg>
-<arg>url=https://www.idp.com/india/user-signup/</arg>
+<arg>url=https://stg.studyreach.com/</arg>
 <arg>executable_path=BrowserDriverManager.Get Browser Driver Path</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230102 18:40:32.502" level="INFO">Opening browser 'Chrome' to base url 'https://www.idp.com/india/user-signup/'.</msg>
-<status status="PASS" starttime="20230102 18:40:32.502" endtime="20230102 18:41:30.550"/>
+<msg timestamp="20230104 15:08:17.951" level="INFO">Opening browser 'Chrome' to base url 'https://stg.studyreach.com/'.</msg>
+<status status="PASS" starttime="20230104 15:08:17.951" endtime="20230104 15:08:32.385"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230102 18:41:30.550" endtime="20230102 18:41:31.333"/>
+<status status="PASS" starttime="20230104 15:08:32.386" endtime="20230104 15:08:32.510"/>
 </kw>
-<status status="PASS" starttime="20230102 18:40:27.765" endtime="20230102 18:41:31.334"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230104 15:09:02.513" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20230104 15:08:32.510" endtime="20230104 15:09:02.513"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[text()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230104 15:09:02.513" level="INFO">Clicking element 'xpath=//*[text()='Login']'.</msg>
+<status status="PASS" starttime="20230104 15:09:02.513" endtime="20230104 15:09:06.694"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230104 15:09:19.609" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230104 15:09:06.695" endtime="20230104 15:09:19.609"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@name='username']</arg>
+<arg>strpatadm07122022@yopmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230104 15:09:19.609" level="INFO">Typing text 'strpatadm07122022@yopmail.com' into text field 'xpath=//*[@name='username']'.</msg>
+<status status="PASS" starttime="20230104 15:09:19.609" endtime="20230104 15:09:19.728"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@name='password']</arg>
+<arg>Test@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230104 15:09:19.729" level="INFO">Typing text 'Test@123' into text field 'xpath=//*[@name='password']'.</msg>
+<status status="PASS" starttime="20230104 15:09:19.729" endtime="20230104 15:09:19.829"/>
+</kw>
+<kw name="Cover Element" library="SeleniumLibrary">
+<arg>xpath=//*[text()='Login']</arg>
+<doc>Will cover elements identified by ``locator`` with a blue div without breaking page layout.</doc>
+<status status="PASS" starttime="20230104 15:09:19.829" endtime="20230104 15:09:19.842"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[text()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230104 15:09:19.843" level="INFO">Clicking element 'xpath=//*[text()='Login']'.</msg>
+<msg timestamp="20230104 15:09:20.202" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230104 15:09:20.202" level="FAIL">Element with locator 'xpath=//*[text()='Login']' not found.</msg>
+<status status="FAIL" starttime="20230104 15:09:19.842" endtime="20230104 15:09:20.318"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@class='nav_rgt']</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230104 15:09:20.333" endtime="20230104 15:09:20.333"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20230104 15:09:20.333" endtime="20230104 15:09:20.333"/>
+</kw>
+<status status="FAIL" starttime="20230104 15:08:15.028" endtime="20230104 15:09:20.333">Element with locator 'xpath=//*[text()='Login']' not found.</status>
 </test>
-<status status="FAIL" starttime="20230102 18:40:19.320" endtime="20230102 18:41:31.336"/>
+<status status="FAIL" starttime="20230104 15:08:11.564" endtime="20230104 15:09:20.333"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="1" skip="0">All Tests</stat>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="1" skip="0" id="s1" name="API">API</stat>
+<stat pass="0" fail="2" skip="0" id="s1" name="API">API</stat>
 </suite>
 </statistics>
 <errors>
